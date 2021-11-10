@@ -1,13 +1,13 @@
 # basic-messenger-client
-The API for the basic messenger service
+The socket io client for the basic messenger service
 
 ## Getting Started
 
 ```Bash
-# Install Dependencies
+# Install dependencies
 npm install
 
-# Running CAPS
+# Running basic messenger client
 npm run dev
 
 # Testing with jest
