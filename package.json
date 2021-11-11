@@ -2,7 +2,7 @@
   "name": "basic-messenger-client",
   "description": "The client for the basic messenger service",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/basic-messenger/basic-messenger-client.git"
