@@ -1,17 +1,19 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "react-bootstrap/Navbar";
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
-import { Link } from "react-router-dom";
-import "./header.css";
-import { withAuth0 } from "@auth0/auth0-react";
+// import Navbar from "react-bootstrap/Navbar";
+// import LoginButton from "./LoginButton";
+// import LogoutButton from "./LogoutButton";
+// import { Link } from "react-router-dom";
+
+// import { withAuth0 } from "@auth0/auth0-react";
+
+import "./Header.css";
 
 class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>Basic Chat Messenger</h1>
+        <h1>Basic Messenger</h1>
       </header>
     );
   }

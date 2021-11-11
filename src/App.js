@@ -5,6 +5,8 @@ import io from "socket.io-client";
 import { nanoid } from "nanoid";
 import "./App.css";
 import Form from "react-bootstrap/Form";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const socket = io.connect("http://localhost:3001");
 const user = nanoid(7);
@@ -21,11 +23,13 @@ class App extends React.Component {
 
   chatHandler(e) {
     e.preventDefault();
-    socket.emit("send-message", {
-      message: this.state.message,
-      userName: user,
-      room: this.state.currentRoom,
-    });
+    if(this.state.message !== "") {
+      socket.emit("send-message", {
+        message: this.state.message,
+        userName: user,
+        room: this.state.currentRoom,
+      });
+    }
     this.setState({
       message: "",
     });
@@ -65,11 +69,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Basic Messenger</h1>
+        <Header />
         <button onClick={(e) => this.joinRoom(1)}>Room 1</button>
         <button onClick={(e) => this.joinRoom(2)}>Room 2</button>
         <button onClick={(e) => this.joinRoom(3)}>Room 3</button>
-        <h2>
+        <h2 className="scroll-area">
           {this.state.chat.map((payload, idx) => {
             return (
               <p key={idx}>
@@ -88,8 +92,9 @@ class App extends React.Component {
             <Form.Control value="Send" type="submit" onClick={this.chatHandler} />
           </Form>
         }
+        <Footer />
       </div>
-    );
+    )
   }
 }
 export default App;
