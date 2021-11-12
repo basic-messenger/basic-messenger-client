@@ -1,6 +1,7 @@
 h1 {
   font-size: 3em;
   padding-bottom: 1em;
+  color: cadetblue;
 }
 
 a {
@@ -13,8 +14,9 @@ a:hover {
   color:darkgrey;
 }
 
-span.navbar-brand {
-  color: cornsilk;
+input.form-control {
+  background-color: #36454F;
+  color: #FFFFFF;
 }
 
 button {

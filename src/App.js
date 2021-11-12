@@ -7,9 +7,12 @@ import "./App.css";
 import Form from "react-bootstrap/Form";
 import Header from "./Header";
 import Footer from "./Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button'
 
 const socket = io.connect("http://localhost:3001");
 const user = nanoid(7);
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -70,9 +73,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <button onClick={(e) => this.joinRoom(1)}>Room 1</button>
-        <button onClick={(e) => this.joinRoom(2)}>Room 2</button>
-        <button onClick={(e) => this.joinRoom(3)}>Room 3</button>
+        {/* <button onClick={(e) => this.joinRoom(1)}>Room 1</button> */}
+        {/* <button onClick={(e) => this.joinRoom(2)}>Room 2</button> */}
+        {/* <button onClick={(e) => this.joinRoom(3)}>Room 3</button> */}
+        <Button variant="secondary" onClick={(e) => this.joinRoom(1)} >Room 1</Button>
+        <Button variant="warning" onClick={(e) => this.joinRoom(1)} >Room 2</Button>
+        <Button variant="info" onClick={(e) => this.joinRoom(1)} >Room 3</Button>
         <h2 className="scroll-area">
           {this.state.chat.map((payload, idx) => {
             return (
