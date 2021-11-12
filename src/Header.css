@@ -1,0 +1,22 @@
+h1 {
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+
+a {
+  color: cadetblue;
+  padding: 10px 10px;
+  margin-right: 10px;
+}
+
+a:hover {
+  color:darkgrey;
+}
+
+span.navbar-brand {
+  color: cornsilk;
+}
+
+button {
+  padding: 5px;
+}
