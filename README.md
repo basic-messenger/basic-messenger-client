@@ -32,6 +32,9 @@ yarn run start
 yarn run test
 ```
 
+## UML
+![Lab14UML](src/lab14_UML.jpeg)
+
 ## Author
 
 👤 **antoni909, markjackson28, MuckT, vbchomp**
