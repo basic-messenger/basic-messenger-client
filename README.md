@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> The client for the basic messenger service
+> This is the front-end for our basic messaging app. Within this app, a user is able to join a room and chat with others who are also in the room. The user is also able to switch between rooms.
 
 ## Install
 
