@@ -50,5 +50,9 @@ h2 {
 .scroll-area {
   overflow-y: scroll;
   align-self: baseline;
-  height: 70vh;
+  height: 65vh;
+}
+
+.scroll-area p {
+  color: black;
 }

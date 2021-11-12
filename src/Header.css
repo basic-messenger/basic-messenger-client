@@ -1,6 +1,7 @@
 h1 {
   font-size: 3em;
   padding-bottom: 1em;
+  color: cadetblue;
 }
 
 a {
@@ -11,10 +12,6 @@ a {
 
 a:hover {
   color:darkgrey;
-}
-
-span.navbar-brand {
-  color: cornsilk;
 }
 
 button {
