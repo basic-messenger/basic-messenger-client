@@ -14,11 +14,6 @@ a:hover {
   color:darkgrey;
 }
 
-input.form-control {
-  background-color: #36454F;
-  color: #FFFFFF;
-}
-
 button {
   padding: 5px;
 }
